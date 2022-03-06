@@ -1,0 +1,92 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    width: 80%;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    justify-content: center;
+    margin: auto 0;
+    height: auto;
+}
+
+.perfil-data img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    border: 1px solid white;
+    margin: auto 0;
+    margin-right: 0px;
+    margin-right: 1rem;
+}
+
+.cuadro-1 {
+    background-color: hsl(263, 55%, 52%);
+    padding: 1.5rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.cuadro-2 {
+    background-color: hsl(217, 19%, 35%);
+    padding: 1.5rem;
+    grid-column-start: 3;
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.cuadro-3 {
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    grid-row-start: 1;
+    grid-column-start: 4;
+    grid-row-end: 3;
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.cuadro-4 {
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.cuadro-5 {
+    background-color: hsl(219, 29%, 14%);
+    padding: 1.5rem;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.perfil-data {
+    display: flex;
+    flex-direction: row;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
