@@ -8,17 +8,6 @@ body {
     height: 100vh;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
-    width: 80%;
-    row-gap: 1rem;
-    column-gap: 1rem;
-    justify-content: center;
-    margin: auto 0;
-    height: auto;
-}
-
 .perfil-data img {
     width: 2.5rem;
     height: 2.5rem;
@@ -29,23 +18,48 @@ main {
     margin-right: 1rem;
 }
 
+.parrafo {
+    opacity: 70%;
+}
+
+.title {
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 1.5rem;
+    z-index: 2;
+    position: relative;
+}
+
+.verificado {
+    opacity: 50%;
+}
+
+.perfilTxt p {
+    margin: 0;
+}
+
+.perfilTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .cuadro-1 {
     background-color: hsl(263, 55%, 52%);
     padding: 1.5rem;
     grid-column-start: 1;
     grid-column-end: 3;
-    border-radius: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    color: hsl(0, 0%, 100%);
+    position: relative;
 }
 
 .cuadro-2 {
     background-color: hsl(217, 19%, 35%);
     padding: 1.5rem;
     grid-column-start: 3;
-    border-radius: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    color: hsl(0, 0%, 100%);
 }
 
 .cuadro-3 {
@@ -54,17 +68,15 @@ main {
     grid-row-start: 1;
     grid-column-start: 4;
     grid-row-end: 3;
-    border-radius: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    color: hsl(217, 19%, 35%);
 }
 
 .cuadro-4 {
     background-color: hsl(0, 0%, 100%);
     padding: 1.5rem;
-    border-radius: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    color: hsl(217, 19%, 35%);
 }
 
 .cuadro-5 {
@@ -72,9 +84,8 @@ main {
     padding: 1.5rem;
     grid-column-start: 2;
     grid-column-end: 4;
-    border-radius: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+    color: hsl(0, 0%, 100%);
 }
 
 .perfil-data {
@@ -89,4 +100,46 @@ main {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 360px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        row-gap: 1.5rem;
+        column-gap: 1.5rem;
+        justify-content: center;
+        margin: auto 0;
+        height: auto;
+        margin-top: 2rem;
+    }
+    .imgFlotante {
+        position: absolute;
+        right: 0.5rem;
+        z-index: 1;
+        width: 7rem;
+        top: 0;
+    }
+}
+
+@media (min-width: 1281px) {
+    main {
+        display: grid;
+        grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+        width: 80%;
+        row-gap: 1.5rem;
+        column-gap: 1.5rem;
+        justify-content: center;
+        margin: auto 0;
+        height: auto;
+        margin-top: auto;
+    }
+    .imgFlotante {
+        position: absolute;
+        right: 5rem;
+        z-index: 1;
+        width: 7rem;
+        top: 0;
+    }
 }
