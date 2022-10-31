@@ -1,31 +1,20 @@
 body {
     background-color: hsl(210, 46%, 95%);
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 13px;
     display: flex;
     align-items: center;
     flex-direction: column;
     height: 100vh;
 }
 
-.perfil-data img {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 2.5rem;
-    border: 1px solid white;
-    margin: auto 0;
-    margin-right: 0px;
-    margin-right: 1rem;
-}
 
 .parrafo {
     opacity: 70%;
 }
 
 .title {
-    font-size: 15px;
     font-weight: bolder;
-    margin-top: 1.5rem;
+    margin-top: 1.5vw;
     z-index: 2;
     position: relative;
 }
@@ -46,10 +35,8 @@ body {
 
 .cuadro-1 {
     background-color: hsl(263, 55%, 52%);
-    padding: 1.5rem;
     grid-column-start: 1;
     grid-column-end: 3;
-    border-radius: 0.5rem;
     color: hsl(0, 0%, 100%);
     position: relative;
     box-shadow: 5px 2px 45px -35px hsl(217, 19%, 35%);
@@ -57,49 +44,39 @@ body {
 
 .cuadro-2 {
     background-color: hsl(217, 19%, 35%);
-    padding: 1.5rem;
     grid-column-start: 3;
-    border-radius: 0.5rem;
     color: hsl(0, 0%, 100%);
     box-shadow: 5px 2px 45px -35px hsl(217, 19%, 35%);
 }
 
 .cuadro-3 {
     background-color: hsl(0, 0%, 100%);
-    padding: 1.5rem;
     grid-row-start: 1;
     grid-column-start: 4;
     grid-row-end: 3;
-    border-radius: 0.5rem;
     color: hsl(217, 19%, 35%);
     box-shadow: 5px 2px 45px -35px hsl(217, 19%, 35%);
 }
 
 .cuadro-4 {
     background-color: hsl(0, 0%, 100%);
-    padding: 1.5rem;
-    border-radius: 0.5rem;
     color: hsl(217, 19%, 35%);
     box-shadow: 5px 2px 45px -35px hsl(217, 19%, 35%);
 }
 
 .cuadro-5 {
     background-color: hsl(219, 29%, 14%);
-    padding: 1.5rem;
     grid-column-start: 2;
     grid-column-end: 4;
-    border-radius: 0.5rem;
     color: hsl(0, 0%, 100%);
     box-shadow: 5px 2px 45px -35px hsl(217, 19%, 35%);
 }
-
 .perfil-data {
     display: flex;
     flex-direction: row;
 }
 
 .attribution {
-    font-size: 11px;
     text-align: center;
 }
 
@@ -107,7 +84,7 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 360px) {
+@media (min-width: 300px) {
     main {
         display: flex;
         flex-direction: column;
@@ -126,15 +103,36 @@ body {
         width: 7rem;
         top: 0;
     }
+    body{
+        font-size: .85rem;
+    
+        }.title{
+            font-size: 1rem;
+        
+            }
+            .perfil-data img {
+                width: 2.5rem;
+                height: 2.5rem;
+                border-radius: 2.5rem;
+                border: 1px solid white;
+                margin: auto 0;
+                margin-right: 0px;
+                margin-right: 1vw;
+            }
+            .cuadro{
+                padding: 1.5rem;
+                border-radius: 0.5rem ;
+            
+            }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1000px) {
     main {
         display: grid;
         grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
         width: 80%;
-        row-gap: 1.5rem;
-        column-gap: 1.5rem;
+        row-gap: 1.5vw;
+        column-gap: 1.5vw;
         justify-content: center;
         margin: auto 0;
         height: auto;
@@ -142,9 +140,35 @@ body {
     }
     .imgFlotante {
         position: absolute;
-        right: 5rem;
+        right: 5vw;
         z-index: 1;
-        width: 7rem;
+        width: 7vw;
         top: 0;
+    }
+    body{
+    font-size: 1vw;
+
+    }
+    .title{
+    font-size: 1.2vw;
+
+    }
+    .attribution{
+    font-size: .9vw;
+
+    }
+    .perfil-data img {
+        width: 2.5vw;
+        height: 2.5vw;
+        border-radius: 2.5vw;
+        border: 1px solid white;
+        margin: auto 0;
+        margin-right: 0px;
+        margin-right: 1vw;
+    }
+    .cuadro{
+        padding: 1.5vw;
+        border-radius: 0.5vw;
+    
     }
 }
